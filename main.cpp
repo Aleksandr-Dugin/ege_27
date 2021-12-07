@@ -21,7 +21,10 @@ void number_of_products_div(){
     	}
 	for (int i = 0; i < N; i++){
         	for (int j = i + 1; j < N; j++){
-			cout << numbers[i] *numbers[j] << endl;
+			if (numbers[i] * numbers[j] % 110 == 0){
+				cout << numbers[i] * numbers[j] << endl;
+			}
+		
 		}
 	}
 }	
