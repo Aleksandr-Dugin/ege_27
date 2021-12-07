@@ -37,16 +37,11 @@ void number_of_products_div(){
             n0++;
     }        
 
-    cout << n154 << endl;     
-    cout << n77 << endl;     
-    cout << n77 << endl;     
-    cout << n22 << endl;     
-    cout << n14 << endl;     
-    cout << n11 << endl;     
-    cout << n7 << endl;     
-    cout << n2 << endl;     
-    cout << n0 << endl;     
 
+
+    long long a =n154 * (n154- 1) / 2 + n154* (n77 + n22 + n14 + n11 + n7 + n2) + (n77 * n22 + n77 * n14 + n22 * n14) + (n77 * n2 + n22 * n7 + n14 * n11) + n0 * n154;
+
+    cout << a << endl;
     
     
 
