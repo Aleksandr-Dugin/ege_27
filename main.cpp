@@ -3,9 +3,11 @@
 using namespace std; 
 
 
-int main(){ 
-    
-    cout << "Hello world" << endl; 
+void number_of_products_div(){
 
+}
+int main(){ 
+    number_of_products_div();
+    
     return 0; 
 }
