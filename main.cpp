@@ -12,8 +12,10 @@ void number_of_products_div(){
         5. посчитать и вывести количество подходящих произведений     
     
     */   
-    int N;
+    int N, c;
+    c = 0; 
     cin >> N; 
+
     vector<int> numbers(N); 
     for (int i =0; i < N; i++){
         cin >> numbers[i]; 
@@ -21,13 +23,13 @@ void number_of_products_div(){
 
     for (int i = 0; i < N; i++){
         for (int j = i + 1; j < N; j++){
-        	if (numbers[i] * numbers[j] % 14 == 0){
-			cout << numbers[i] * numbers[j] << endl;
+        	if (numbers[i] * numbers[j] % 22 == 0){
+			c++;
 		}
 		
 	}
     }
-     
+    cout << c << endl;
 }
 
 
