@@ -12,7 +12,8 @@ void number_of_products_div(){
     
    */   
 	
-	int N;
+	int N, c;
+	c = 0;
        cin >> N;	
 	vector<int> numbers(N); 
 	
@@ -22,11 +23,12 @@ void number_of_products_div(){
 	for (int i = 0; i < N; i++){
         	for (int j = i + 1; j < N; j++){
 			if (numbers[i] * numbers[j] % 110 == 0){
-				cout << numbers[i] * numbers[j] << endl;
+				c++;
 			}
 		
 		}
 	}
+	cout << c << endl; 
 }	
 
 
