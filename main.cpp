@@ -1,5 +1,5 @@
 #include <iostream> 
-
+#include <vector> 
 using namespace std; 
 
 void number_of_products_div(){
@@ -12,9 +12,18 @@ void number_of_products_div(){
     
    */   
 	
+	int N;
+       cin >> N;	
+	vector<int> numbers(N); 
 	
-
-}
+    	for (int i = 0; i < N; i++){
+    		cin >> numbers[i]; 
+    	}
+    	for (int i = 0; i < N; i++){
+    		cout << numbers[i] << endl; 
+    	}
+		
+}	
 
 
 int main(){ 
