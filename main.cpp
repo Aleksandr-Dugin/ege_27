@@ -19,10 +19,11 @@ void number_of_products_div(){
     	for (int i = 0; i < N; i++){
     		cin >> numbers[i]; 
     	}
-    	for (int i = 0; i < N; i++){
-    		cout << numbers[i] << endl; 
-    	}
-		
+	for (int i = 0; i < N; i++){
+        	for (int j = i + 1; j < N; j++){
+			cout << numbers[i] << " " << numbers[j] << endl; 
+		}
+	}
 }	
 
 
