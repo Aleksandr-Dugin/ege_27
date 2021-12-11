@@ -20,10 +20,9 @@ void number_of_products_div(){
         else if (cur % 5 == 0) n5++; 
         else if (cur % 7 == 0) n7++; 
     }
-    
-    cout << n35 << endl;
-    cout << n5<< endl;
-    cout << n7 << endl;
+     no = n - n35-n5-n7;
+    cout << n35*n5 + n35*n7 + n35*no + n35*(n35-1) / 2 + n5*n7 << endl;
+
 }
 
 
