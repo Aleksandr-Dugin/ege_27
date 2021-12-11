@@ -22,7 +22,11 @@ void number_of_sums_div(){
 
     for (int i =0; i < n - 1; i++){
         for (int j = i + 1; j < n; j++){
-            cout << numbers[i] << " " << numbers[j] << endl;     
+            tmp = numbers[i] + numbers[j]; 
+            if (tmp % 2 != 0){
+                cout << tmp << endl;
+            }
+            
         }
     }
 
