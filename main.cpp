@@ -12,24 +12,26 @@ void number_of_sums_div(){
     5. найти и вывести наиобольшую сумму 
      **/
         
-    int n, tmp; 
+    int n, tmp, mx; 
     cin >> n; 
     vector<int> numbers(n); 
     for (int i =0; i < n; i++){
         cin >> numbers[i]; 
     }        
      
-
+    mx = numbers[0];
     for (int i =0; i < n - 1; i++){
         for (int j = i + 1; j < n; j++){
             tmp = numbers[i] + numbers[j]; 
-            if (tmp % 2 != 0){
-                cout << tmp << endl;
-            }
-            
+            if ((tmp % 2 != 0) && (tmp > mx))
+                mx = tmp;  
+
         }
     }
-
+    if (mx == numbers[0]){
+        cout << -1 << endl; 
+    }else 
+        cout << mx << endl;
 
 } 
 
