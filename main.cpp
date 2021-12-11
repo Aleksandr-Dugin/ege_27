@@ -1,4 +1,5 @@
 #include <iostream> 
+#include <vector>
 
 using namespace std; 
 
@@ -11,6 +12,16 @@ void number_of_sums_div(){
     5. найти и вывести наиобольшую сумму 
      **/
         
+    int n; 
+    cin >> n; 
+    vector<int> numbers(n); 
+    for (int i =0; i < n; i++){
+        cin >> numbers[i]; 
+    }        
+    for (int i =0; i < n; i++){
+        cout << numbers[i] << endl;
+    }        
+
 
 
 } 
