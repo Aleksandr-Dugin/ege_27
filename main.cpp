@@ -1,5 +1,5 @@
 #include <iostream> 
-
+#include <vector>
 using namespace std; 
 
 void number_sums_div(){
@@ -12,6 +12,17 @@ void number_sums_div(){
 
 
      **/
+
+    int t; 
+    vector<int> numbers; 
+    while (t != -9999){
+        cin >> t; 
+        numbers.push_back(t); 
+    }
+    numbers.pop_back(); 
+    for (int i = 0; i < numbers.size(); i++){
+        cout << numbers[i] << endl; 
+    }
 
 }
 
