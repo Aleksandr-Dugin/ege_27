@@ -21,10 +21,19 @@ void min_sum_min_distance_ineff(){
     }
 
     for (int i =0; i < n; i++){
-        cout << numbers[i] << endl; 
+        for (int j = i + 4; j < n; j++){
+            cout << numbers[i] + numbers[j] << endl; 
+        }
+
     }
 
-    
+   
+
+
+
+
+
+
 }
 
 
