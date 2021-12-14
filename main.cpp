@@ -23,8 +23,10 @@ void number_sums_div(){
 
     for (int i = 0; i < numbers.size(); i++){
         for (int j = i + 1; j < numbers.size(); j++){
-            cout << numbers[i] << " " <<  numbers[j] << endl; 
-
+    
+            if (((numbers[i] + numbers[j]) %40 == 0) && (numbers[i] > 40 || numbers[j] > 40)){
+                cout << numbers[i]+numbers[j] << endl; 
+            }
         }
 
     }
