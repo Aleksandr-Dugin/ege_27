@@ -2,10 +2,14 @@
 
 using namespace std; 
 
+void number_sums_div(){
+
+
+}
+
 
 int main(){ 
     
-    cout << "Hello world" << endl; 
-
+    number_sums_div();
     return 0; 
 }
