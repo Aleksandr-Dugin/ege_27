@@ -20,10 +20,14 @@ void number_sums_div(){
         numbers.push_back(t); 
     }
     numbers.pop_back(); 
-    for (int i = 0; i < numbers.size(); i++){
-        cout << numbers[i] << endl; 
-    }
 
+    for (int i = 0; i < numbers.size(); i++){
+        for (int j = i + 1; j < numbers.size(); j++){
+            cout << numbers[i] << " " <<  numbers[j] << endl; 
+
+        }
+
+    }
 }
 
 
