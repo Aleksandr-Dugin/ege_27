@@ -13,7 +13,9 @@ void min_sum_min_distance_ineff(){
     5. вывести минимальную сумму 
      */
         
-    int n; 
+    int n, mn; 
+
+    mn = 10000; 
     cin >> n; 
     vector<int> numbers(n); 
     for (int i =0; i < n; i++){
@@ -22,13 +24,14 @@ void min_sum_min_distance_ineff(){
 
     for (int i =0; i < n; i++){
         for (int j = i + 4; j < n; j++){
-            cout << numbers[i] + numbers[j] << endl; 
+            if (numbers[i] + numbers[j] < mn){
+                mn = numbers[i] + numbers[j];   
+            }
         }
-
     }
 
    
-
+    cout << mn << endl;
 
 
 
