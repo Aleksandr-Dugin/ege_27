@@ -2,10 +2,10 @@
 
 using namespace std; 
 
+void effective_solution(){}
+
 
 int main(){ 
-    
-    cout << "Hello world" << endl; 
-
-    return 0; 
+    	effective_solution();
+	return 0; 
 }
