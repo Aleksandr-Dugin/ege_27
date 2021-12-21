@@ -23,9 +23,13 @@ void ineff_solution(){
 		for (int j = i + 1; j < n; j++){					
 			for (int p = j + 1; p < n; p++){
 				if ((numbers[i] * numbers[j] * numbers[p]) > best){
-					best = numbers[i] * numbers[j] * numbers[p]; 
+					if ((numbers[i] * numbers[j] * numbers[p]) % 4 == 0){
+
+						best = numbers[i] * numbers[j] * numbers[p]; 
+					}
 				}
 			}
+
 		}
 	}
 	cout << best << endl;
