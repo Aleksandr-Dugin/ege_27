@@ -1,5 +1,5 @@
 #include <iostream> 
-
+#include <vector>
 using namespace std; 
 
 void ineff_solution(){
@@ -9,6 +9,20 @@ void ineff_solution(){
 	3. проверка второго условия и вывод
 	4. ответ на задачи 
 	**/
+
+	int n;
+	cin >> n;
+	vector<int> numbers(n);
+
+	for (int i = 0; i < n; i++){
+		cin >> numbers[i];
+	}
+
+
+	for (int i = 0; i < n; i++){
+		cout << numbers[i] << endl; 
+	}
+
 
 }
 
