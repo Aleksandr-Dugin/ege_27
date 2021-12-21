@@ -4,7 +4,7 @@ using namespace std;
 
 void ineff_solution(){
 	/*
-	1. считать и вывести входные данные	
+	*1. считать и вывести входные данные	
 	2. проверка первого условия и вывод
 	3. проверка второго условия и вывод
 	4. ответ на задачи 
@@ -18,12 +18,17 @@ void ineff_solution(){
 		cin >> numbers[i];
 	}
 
-
 	for (int i = 0; i < n; i++){
-		cout << numbers[i] << endl; 
+		for (int j = i + 1; j < n; j++){					
+			for (int p = j + 1; p < n; p++){
+				if ((numbers[i] * numbers[j] * numbers[p]) % 4 == 0){
+					cout << numbers[i] + numbers[j] + numbers[p] << endl;
+				}
+			}       	
+			
+		}
 	}
-
-
+	
 }
 
 
