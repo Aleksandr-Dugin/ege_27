@@ -25,9 +25,11 @@ void num_sum_max_dist(){
     for (int i = 0; i < numbers.size(); i++){
 
         for (int j = i + 1; j < numbers.size() - 1; j++){
-            if ( (abs(i - j)) < 9){
+    
+            if ((numbers[i] + numbers[j]) % 33 == 0){
                 cout << numbers[i] << " " << numbers[j] << endl; 
-            }     
+            }
+
             
         }
 
