@@ -3,9 +3,14 @@
 using namespace std; 
 
 
+void num_sum_max_dist(){
+
+
+}
+
+
 int main(){ 
-    
-    cout << "Hello world" << endl; 
+    num_sum_max_dist(); 
 
     return 0; 
 }
