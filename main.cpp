@@ -12,8 +12,8 @@ void num_sum_max_dist(){
 
 
     **/
-    int n; 
-    
+    int n,c; 
+    c = 0; 
     cin >> n;   
     
     
@@ -27,8 +27,9 @@ void num_sum_max_dist(){
         for (int j = i + 1; j < numbers.size() - 1; j++){
     
             if ((numbers[i] + numbers[j]) % 33 == 0){
-                cout << numbers[i] << " " << numbers[j] << endl; 
+                c++;
             }
+
 
             
         }
@@ -36,7 +37,7 @@ void num_sum_max_dist(){
     }
 
 
-
+    cout << c << endl;
 }
 
 
