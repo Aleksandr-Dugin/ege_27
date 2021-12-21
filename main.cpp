@@ -10,7 +10,8 @@ void ineff_solution(){
 	4. ответ на задачи 
 	**/
 
-	int n;
+	int n, best;
+	best = - 1;
 	cin >> n;
 	vector<int> numbers(n);
 
@@ -21,14 +22,13 @@ void ineff_solution(){
 	for (int i = 0; i < n; i++){
 		for (int j = i + 1; j < n; j++){					
 			for (int p = j + 1; p < n; p++){
-				if ((numbers[i] * numbers[j] * numbers[p]) % 4 == 0){
-					cout << numbers[i] + numbers[j] + numbers[p] << endl;
+				if ((numbers[i] * numbers[j] * numbers[p]) > best){
+					best = numbers[i] * numbers[j] * numbers[p]; 
 				}
-			}       	
-			
+			}
 		}
 	}
-	
+	cout << best << endl;
 }
 
 
