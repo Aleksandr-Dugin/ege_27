@@ -2,10 +2,14 @@
 
 using namespace std; 
 
+void ineff_solution(){
+
+}
+
+
 
 int main(){ 
     
-    cout << "Hello world" << endl; 
-
-    return 0; 
+	ineff_solution();
+    	return 0; 
 }
